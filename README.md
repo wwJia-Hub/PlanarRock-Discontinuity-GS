@@ -100,6 +100,20 @@ Our method demonstrates superior performance compared to conventional photogramm
   <em>PGSR training convergence: surface normal quality improves as training steps increase.</em>
 </p>
 
+## Code
+
+A self-contained MATLAB implementation of the discontinuity-extraction stage
+(mesh segmentation and clustering) is provided under [`matlab/`](matlab/). It includes:
+
+- PLY mesh reading (ASCII / binary) with polygon fan triangulation
+- Laplacian smoothing and face-normal estimation
+- Region-growing mesh segmentation into candidate discontinuity patches
+- Clustering (WOA) with silhouette-coefficient selection of the optimal number of discontinuity sets
+- Dip / dip-direction output and visualization (3D colored groups, pole figure, rose diagram)
+- An interactive GUI (`DiscontinuityAnalyzer`)
+
+See [`matlab/README.md`](matlab/README.md) for usage, parameters, and the pipeline diagram.
+
 ## Citation
 
 If you find this work useful, please cite:
