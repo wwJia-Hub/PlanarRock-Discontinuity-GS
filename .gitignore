@@ -1,0 +1,27 @@
+# ===== MATLAB =====
+*.asv
+*.m~
+*.fig
+*.mat
+*.slx
+*.slx.autosave
+*.mlapp
+*.mlx
+*.mlappinstall
+*.mltbx
+*.prj
+
+# ===== 数据 / 结果二进制 =====
+*.xlsx
+*.csv
+output/
+*.zip
+*.tar.gz
+
+# ===== 个人 / 无关文件 =====
+_personal/
+
+# ===== 操作系统 =====
+Thumbs.db
+.DS_Store
+desktop.ini
