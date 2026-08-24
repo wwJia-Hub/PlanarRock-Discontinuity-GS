@@ -87,12 +87,40 @@ Our method demonstrates superior performance compared to conventional photogramm
 ### Reconstruction Quality Comparison
 
 <p align="center">
-  <imgÜÏHYËÜXÛÛÝXÝ[ÛØÛÛ\\\ÛÛÈ[HXÛÛÝXÝ[ÛÛÛ\\\ÛÛÚYH
-IHÏ[OÛÛ\\\ÛÛ]ÙY[Y]\Ú\H
-ÛÛ[[Û[
-H[ÔÔ
-Ý\ÊHXÛÛÝXÝ[Û]X[]K\È\ØÛÛ[Z]H^XÝ[Û\Ý[ËÙ[OÜÈÈÈZ[[ÈÛÛ\Ù[ÙB[YÛHÙ[\[YÈÜÏHYËÝZ[[×ØÛÛ\Ù[ÙKÈ[HZ[[ÈÛÛ\Ù[ÙHÚYH
-IHÏ[OÔÔZ[[ÈÛÛ\Ù[ÙNÝ\XÙHÜX[]X[]H[\Ý\È\ÈZ[[ÈÝ\È[ÜX\ÙKÙ[OÜÈÈÚ]][ÛY[ÝH[\ÈÛÜÈ\ÙY[X\ÙHÚ]NX^\XÛ^ÝØ[Ì[\ØÚË]O^ÒYÚYYXÚY[ÞHXÛÛÝXÝ[Û[\ØÛÛ[Z]H^XÝ[ÛÙØÚÈX\ÜÈÝ]ÜÜÈXHÔ[\X\ÙYÑØ]\ÜÚX[Ü][È[X[ÛKUÚ\ÙHÛ\Ý\[ß_K]]Ü^ÕØ[ËÙZZXH[Ý[ËX][È[[Ë\ZH[Ú[Ë[[[X[ËX[ÛßKÝ\[^Ò[\][Û[Ý\[ÙØÚÈYXÚ[XÜÈ[Z[[ÈØÚY[Ù\ßKÛ[YO^Ì
-ßKYÙ\Ï^ÌL
-Ì_KYX\^ÌKX\Ú\^Ñ[Ù]Y\KÚO^ÌLLMÚZ[\ËL
-Ì_BBÈÈXÚÛÝÛYÛY[Â\ÈÛÜÈZ[È\ÛÌÑØ]\ÜÚX[Ü][×JÎËÜ\Ë\Ø[K[XKÙ[Ü\ÌÙYØ]\ÜÚX[\Ü][ËÊH[ÔÔÔJÎËÙÚ]XÛÛKÞLÙÔÔÔKÙH[ÈHÜYÚ[[]]ÜÈÜZ\^Ù[[ÛÛX][ÛËÈÈXÙ[ÙB\ÈÚXÝ\È[X\ÙY[\HRUXÙ[ÙK
+  <img src="fig/reconstruction_comparison.jpg" alt="Reconstruction Comparison" width="85%" />
+  <br>
+  <em>Comparison between Metashape (conventional) and PGSR (ours) reconstruction quality, plus discontinuity extraction results.</em>
+</p>
+
+### Training Convergence
+
+<p align="center">
+  <img src="fig/training_convergence.jpg" alt="Training Convergence" width="85%" />
+  <br>
+  <em>PGSR training convergence: surface normal quality improves as training steps increase.</em>
+</p>
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{wang2026planarrock,
+  title={High-efficiency reconstruction and discontinuity extraction of rock mass outcrops via {Planar-based 3D Gaussian Splatting and Triangle-Wise Clustering}},
+  author={Wang, Weijia and Guo, Jiateng and Zhang, Zirui and Cheng, Binbin and Yang, Tianhong},
+  journal={International Journal of Rock Mechanics and Mining Sciences},
+  volume={207},
+  pages={106671},
+  year={2026},
+  publisher={Elsevier},
+  doi={10.1016/j.ijrmms.2026.106671}
+}
+```
+
+## Acknowledgments
+
+This work builds upon [3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) and [PGSR](https://github.com/zju3dv/PGSR). We thank the original authors for their excellent contributions.
+
+## License
+
+This project is released under the MIT License.
