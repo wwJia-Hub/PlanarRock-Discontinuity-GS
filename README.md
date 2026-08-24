@@ -19,6 +19,12 @@ Accurate identification of rock mass discontinuities is essential for slope stab
 
 Our method addresses key limitations of conventional photogrammetry-based workflows, which are often time-consuming and prone to reconstruction distortions under weak textures or complex illumination conditions.
 
+<p align="center">
+  <img src="framework.jpg" alt="Framework Overview" width="90%" />
+  <br>
+  <em>Overall framework of the proposed method: from image acquisition to discontinuity extraction.</em>
+</p>
+
 ## Key Features
 
 - **High-fidelity Surface Reconstruction**: Leverages PGSR to convert 3D Gaussian primitives into planar representations, significantly improving geometric accuracy
@@ -37,12 +43,24 @@ PGSR enhances traditional 3D Gaussian Splatting by compressing 3D Gaussian primi
 - Significantly improves surface reconstruction precision
 - Reduces geometric noise inherent in unconstrained Gaussian distributions
 
+<p align="center">
+  <img src="pipeline_comparison.jpg" alt="Pipeline Comparison" width="70%" />
+  <br>
+  <em>Comparison between conventional photogrammetry workflow and 3D Gaussian Splatting workflow.</em>
+</p>
+
 ### 2. Triangle-Wise Clustering (TWC)
 
 TWC operates on the reconstructed mesh to identify planar discontinuity surfaces:
 - Clusters mesh triangles based on normal consistency and spatial proximity
 - Automatically segments individual discontinuity sets
 - Provides geometric parameters (dip, dip direction, spacing) for each set
+
+<p align="center">
+  <img src="twc_algorithm.jpg" alt="TWC Algorithm" width="80%" />
+  <br>
+  <em>Triangle-Wise Clustering (TWC) algorithm: iterative coplanar merging process.</em>
+</p>
 
 ## Pipeline
 
@@ -57,6 +75,30 @@ Our method demonstrates superior performance compared to conventional photogramm
 - **Reconstruction Quality**: Higher geometric fidelity on weak-texture rock surfaces
 - **Processing Speed**: Significantly faster than traditional SfM+MVS pipelines
 - **Extraction Accuracy**: Robust identification of discontinuity sets under varying conditions
+
+### Case Study
+
+<p align="center">
+  <img src="case_study.jpg" alt="Case Study" width="75%" />
+  <br>
+  <em>Real-world rock slope cases and corresponding 3D reconstruction results.</em>
+</p>
+
+### Reconstruction Quality Comparison
+
+<p align="center">
+  <img src="reconstruction_comparison.jpg" alt="Reconstruction Comparison" width="85%" />
+  <br>
+  <em>Comparison between Metashape (conventional) and PGSR (ours) reconstruction quality, plus discontinuity extraction results.</em>
+</p>
+
+### Training Convergence
+
+<p align="center">
+  <img src="training_convergence.jpg" alt="Training Convergence" width="85%" />
+  <br>
+  <em>PGSR training convergence: surface normal quality improves as training steps increase.</em>
+</p>
 
 ## Citation
 
