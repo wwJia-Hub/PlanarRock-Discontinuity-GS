@@ -65,7 +65,7 @@ TWC operates on the reconstructed mesh to identify planar discontinuity surfaces
 ## Pipeline
 
 ```
-Input Images â PGSR Reconstruction â Mesh Generation â TWC Clustering â Discontinuity Sets
+Input Images &rarr; PGSR Reconstruction &rarr; Mesh Generation &rarr; TWC Clustering &rarr; Discontinuity Sets
 ```
 
 ## Results
